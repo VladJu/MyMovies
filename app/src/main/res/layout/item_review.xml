@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="4dp"
+    android:layout_margin="5dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:padding="5dp"
+         tools:background="@drawable/gradient_color_main_bg"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/textViewAuthor"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:elevation="2dp"
+             tools:text="Эдуард Германский"
+             android:textStyle="bold"
+             android:textSize="15sp"
+             android:textColor="@color/white"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <TextView
+             android:id="@+id/textViewData"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:elevation="2dp"
+             android:textSize="15sp"
+             android:textStyle="bold"
+             tools:text="20.09.2024"
+             android:textColor="@color/white"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <TextView
+             android:id="@+id/textViewReview"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:textColor="@color/white"
+             android:textSize="14sp"
+             tools:text="Elrglergl gelgergll elerlgrlgl webol btbrlbll elrlfle ellrlrelfl erllfrlferl lfrele.f.erlerlfrel lerlerf;er prlfer; ;erlferl; ["
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/textViewAuthor" />
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+    
+
+
+</androidx.cardview.widget.CardView>

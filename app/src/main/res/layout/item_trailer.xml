@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="10dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:alpha="0.9"
+        android:background="@drawable/gradient_color_trailer_bg">
+
+        <ImageView
+            android:id="@+id/imageViewPlay"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/polygon_1" />
+
+
+        <TextView
+            android:id="@+id/textViewTrailerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="Spider-Man way of house" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
